@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Multa</title>
+</head>
+<body>
+    <script>
+        // Ler a velocidade do carro e a velocidade máxima da rua
+        velocidade_carro = Number(window.prompt("Digite a velocidade do carro (em km/h): "))
+        velocidade_maxima = Number(window.prompt("Digite a velocidade máxima da rua (em km/h): "))
+
+       // Calcular a diferença entre a velocidade do carro e a velocidade máxima
+       diferenca = velocidade_carro - velocidade_maxima
+
+       // Verificar em qual faixa de multa a diferença se encaixa e informar o valor correspondente
+       if (diferenca <= 10){
+         alert("Multa de R$50,00.")
+       }else if (diferenca <= 30) {
+         alert("Multa de R$100,00.")
+       }else if (diferença <= 31) {
+         alert("Multa de R$300,00.")
+       }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ler 3 valores</title>
+</head>
+<body>
+    <script>
+        // Lendo os valores
+        valor1 = Number(window.prompt("Digite o primeiro valor: "))
+        valor2 = Number(window.prompt("Digite o segundo valor: "))
+        valor3 = Number(window.prompt("Digite o terceiro valor: "))
+
+       // Ordenando os valores
+       menor = min(valor1, valor2, valor3)
+       maior = max(valor1, valor2, valor3)
+       meio = (valor1 + valor2 + valor3) - menor - maior
+
+      // Imprimindo os valores em ordem crescente
+      alert("Valores em ordem crescente: ", menor, meio, maior)
+
+    </script>
+</body>
+</html>

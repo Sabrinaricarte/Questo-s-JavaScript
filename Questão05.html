@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bissexto</title>
+</head>
+<body>
+    <script>
+
+        var ano = Number(window.prompt("Digite um ano: "));
+
+        if (ano % 400 === 0 || (ano % 4 === 0 && ano % 100 !== 0)) {
+            alert(ano + " é um ano bissexto");
+        } else {
+            alert(ano + " não é um ano bissexto");
+        }
+
+    </script>
+</body>
+</html>
+

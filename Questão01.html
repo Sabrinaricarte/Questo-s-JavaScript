@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // leitura dos dados do aluno
+        var numeroDeIdentificacao = prompt("Digite o número de identificação do aluno:");
+        var nota1 = parseFloat(prompt("Digite a nota 1 do aluno:"));
+        var nota2 = parseFloat(prompt("Digite a nota 2 do aluno:"));
+        var nota3 = parseFloat(prompt("Digite a nota 3 do aluno:"));
+        var mediaDosExercicios = parseFloat(prompt("Digite a média dos exercícios do aluno:"));
+
+// cálculo da média de aproveitamento
+let mediaDeAproveitamento = (nota1 + nota2 * 2 + nota3 * 3 + mediaDosExercicios) / 7;
+
+// atribuição do conceito
+let conceito;
+if (mediaDeAproveitamento >= 90) {
+    conceito = "A";
+} else if (mediaDeAproveitamento >= 75 && mediaDeAproveitamento < 90) {
+    conceito = "B";
+} else if (mediaDeAproveitamento >= 60 && mediaDeAproveitamento < 75) {
+    conceito = "C";
+} else if (mediaDeAproveitamento >= 40 && mediaDeAproveitamento < 60) {
+    conceito = "D";
+} else {
+    conceito = "E";
+}
+
+// impressão dos resultados
+console.log("Aluno: " + numeroDeIdentificacao);
+console.log("Notas: " + nota1 + ", " + nota2 + ", " + nota3);
+console.log("Média dos exercícios: " + mediaDosExercicios);
+console.log("Média de aproveitamento: " + mediaDeAproveitamento);
+console.log("Conceito: " + conceito);
+if (conceito === "A" || conceito === "B" || conceito === "C") {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+    </script>
+</body>
+</html>

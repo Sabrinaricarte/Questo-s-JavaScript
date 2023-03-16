@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço</title>
+</head>
+<body>
+    <script>
+
+        var precoNormal = Number(window.prompt("Digite o preço normal de etiqueta do produto:"));
+        
+
+        var valorFinal;
+        if (codigoCondicaoPagamento === 1) {
+            valorFinal = precoNormal * 0.9; // desconto de 10%
+        } else if (codigoCondicaoPagamento === 2) {
+            valorFinal = precoNormal * 0.85; // desconto de 15%
+        } else if (codigoCondicaoPagamento === 3) {
+            valorFinal = precoNormal / 2; // sem juros
+        } else if (codigoCondicaoPagamento === 4) {
+            valorFinal = (precoNormal / 2) * 1.1; // juros de 10%
+        } else {
+            console.log("Condição de pagamento inválida");
+        }
+
+        if (valorFinal) {
+            console.log("Valor final a ser pago: R$ ${valorFinal.toFixed(2)}");
+        }
+
+    </script>
+</body>
+</html>

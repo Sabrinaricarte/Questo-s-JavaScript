@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>decrescente</title>
+</head>
+<body>
+    <script>
+
+        var valor1 = Number(prompt("Digite o primeiro valor inteiro:"));
+        var valor2 = Number(prompt("Digite o segundo valor inteiro:"));
+        var valor3 = Number(prompt("Digite o terceiro valor inteiro:"));
+
+        if (valor1 > valor2 && valor1 > valor3) {
+          if (valor2 > valor3) {
+          console.log(valor1, valor2, valor3, "em ordem decrescente");
+        } else {
+          console.log(valor1, valor3, valor2, "em ordem decrescente");
+        }
+        } else if (valor2 > valor1 && valor2 > valor3) {
+          if (valor1 > valor3) {
+          console.log(valor2, valor1, valor3, "em ordem decrescente");
+        } else {
+          console.log(valor2, valor3, valor1, "em ordem decrescente");
+        }
+        } else if (valor3 > valor1 && valor3 > valor2) {
+          if (valor1 > valor2) {
+          console.log(valor3, valor1, valor2, "em ordem decrescente");
+        } else {
+          console.log(valor3, valor2, valor1, "em ordem decrescente");
+        }
+        } 
+    </script>
+</body>
+</html>

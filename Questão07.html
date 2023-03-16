@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 números</title>
+</head>
+<body>
+    <script>
+        // Ler os três números fracionários do teclado
+        num1 = Number(window.prompt("Digite o primeiro número fracionário: "))
+        num2 = Number(window.prompt("Digite o segundo número fracionário: "))
+        num3 = Number(window.prompt("Digite o terceiro número fracionário: "))
+
+        // Calcular a soma dos dois últimos números
+        soma = num2 + num3
+
+        // Verificar se o primeiro número é maior do que a soma dos dois últimos
+        if (num1 > soma){
+        alert("O primeiro número é maior do que a soma dos dois últimos.")
+        } else {
+        alert("O primeiro número não é maior do que a soma dos dois últimos.")
+        }
+    </script>
+</body>
+</html>

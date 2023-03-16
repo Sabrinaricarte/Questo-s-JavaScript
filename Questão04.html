@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let valor1 = parseFloat(prompt("Digite o primeiro valor fracionário:"));
+let valor2 = parseFloat(prompt("Digite o segundo valor fracionário:"));
+let operacao = prompt("Digite a operação aritmética desejada (soma, subtração, multiplicação ou divisão):");
+
+let resultado;
+
+switch (operacao) {
+  case "soma":
+    resultado = valor1 + valor2;
+    break;
+  case "subtração":
+    resultado = valor1 - valor2;
+    break;
+  case "multiplicação":
+    resultado = valor1 * valor2;
+    break;
+  case "divisão":
+    resultado = valor1 / valor2;
+    break;
+  default:
+    resultado = "operação inválida";
+    break;
+}
+
+    console.log(resultado);
+    </script>
+</body>
+</html>
